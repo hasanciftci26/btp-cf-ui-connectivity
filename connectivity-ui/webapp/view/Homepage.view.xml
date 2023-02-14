@@ -1,0 +1,26 @@
+<mvc:View controllerName="ndbs.connectivityui.controller.Homepage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table items="{/PersonnelsSet}">
+                <columns>
+                    <Column>
+                        <header>
+                            <Label text="Personnel No" />
+                        </header>
+                    </Column>
+                    <Column>
+                        <header>
+                            <Label text="First Name" />
+                        </header>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <Text text="{PersonnelNo}" />
+                        <Text text="{FirstName}" />
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

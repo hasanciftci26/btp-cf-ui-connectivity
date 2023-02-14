@@ -1,0 +1,12 @@
+{
+  "welcomeFile": "/ndbsconnectivityui",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "^/sap/opu/odata/sap/ZHC_CONNECTIVITY_SRV/(.*)$",
+      "target": "/sap/opu/odata/sap/ZHC_CONNECTIVITY_SRV/$1",
+      "destination": "s4-backend",
+      "csrfProtection": true
+    }
+  ]
+}
